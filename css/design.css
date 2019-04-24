@@ -1,0 +1,267 @@
+/* General */
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+}
+
+.contenedor {
+  width: 955px;
+  margin: auto;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  padding-top: 26px;
+  height: 70px;
+  position: relative;
+  width: 100%;
+
+}
+
+.logotipo {
+  margin-top: 0px;
+  margin-left: 100px;
+  display: inline-block;
+  position: fixed;
+}
+
+.logotipo_fondo_carmesi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 188px;
+  background: #BC3224;
+  border-radius: 0px 0px 20px 20px;
+  position: relative;
+}
+
+.logotipo_fondo_blanco {
+  margin: 0px 4px 4px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 192px;
+  background: #FFFFFF;
+  border-radius: 0px 0px 20px 20px;
+  position: absolute;
+}
+
+.menu {
+  display: inline-block;
+  margin-left: 275px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.menu a {
+  color: #2C3136;
+}
+
+.header .contacto {
+  display: inline-block;
+  margin-left: 13.14px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.header p img {
+  width: 14px;
+  height: 14px;
+}
+
+/* Menu desplegable */
+
+ul, ol {
+  list-style: none;
+}
+
+.nav > li {
+  float: left;
+}
+
+.nav li a {
+	background-color: #FFFFFF;
+	text-decoration:none;
+	padding:10px 12px;
+	display:inline-block;
+
+}
+
+.nav li a:hover {
+	background-color:#BC3224;
+  color: #161616;
+}
+
+.nav li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav li:hover > ul {
+	display:block;
+}
+
+.nav li ul li {
+	position:relative;
+}
+
+/* Portada */
+
+.background {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../images/IMG_0376/IMG_0376.png');
+  background-size: cover;
+  padding: 20px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentacion {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 50px;
+  color: #FFFFFF;
+}
+
+.contacto_caja {
+  display: flex;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
+  width: 168px;
+  height: 40px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto_enlace {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Sección proyectos */
+
+.titulo {
+  margin-top: 60px;
+  margin-bottom: 22.5px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  color: #2C3136;
+}
+
+.proyectos {
+  text-align: center;
+}
+
+.proyecto_caja {
+  width: 260px;
+  height: 349.5px;
+  padding: 5px 5px 14px 5px;
+  display: inline-block;
+  margin: 16px;
+  background: #E9E9E9;
+  text-align: center;
+}
+
+.proyecto_titulo {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.proyecto_subtitulo {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.proyecto_datos {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.ver_mas {
+  font-size: 12px;
+  font-weight: 400;
+  color: #BC3224;
+}
+
+.ver_proyectos_caja {
+  width: 352px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 20 68 10 68;
+  background: #BC3224;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.ver_proyectos {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Footer */
+
+.footer {
+  color: #FFFFFF;
+  background: #2C3136;
+  padding: 50px;
+}
+
+.posicion {
+  display: flex;
+  justify-content: space-around;
+}
+
+.col1 {
+  align-items: center;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.linea {
+  background: #FFFFFF;
+  width: 1px;
+  height: 558px;
+}
+
+.col2 {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
