@@ -1,5 +1,4 @@
-function openCity(evt, cityName) {
-  // Declare all variables
+function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
 
   // Get all elements with class="tabcontent" and hide them
@@ -15,6 +14,9 @@ function openCity(evt, cityName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();

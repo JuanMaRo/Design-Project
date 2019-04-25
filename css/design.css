@@ -265,3 +265,7 @@ h1 {
   font-size: 12px;
   font-weight: 500;
 }
+
+.col2 p {
+  text-indent: 15px;
+}

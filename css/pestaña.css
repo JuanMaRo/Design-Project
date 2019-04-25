@@ -1,14 +1,27 @@
+.background_pestañas {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../images/S5000719/S5000719.png');
+  background-size: cover;
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Style the tab */
 .tab {
-  margin-top: 40px;
+  margin-top: 50px;
   overflow: hidden;
   text-align: center;
   border-bottom: 1px solid #707070;
 }
 
-.hijo {
+.centrar {
   display: inline-block;
-  margin-bottom: 0px;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -26,7 +39,6 @@
 .tab button:hover {
   background-color: #ddd;
   color: #BC3224;
-  /* border-bottom: 1px solid #707070; */
 }
 
 /* Create an active/current tablink class */
@@ -40,10 +52,23 @@
 /* Style the tab content */
 .tabcontent {
   display: none;
-  width: 720px;
   margin: auto;
   position: relative;
-  /* padding: 6px 12px; */
-  /* border: 1px solid #ccc; */
-  /* border-top: 1px solid #707070; */
+}
+
+.tabcontent h2 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #2C3136;
+  text-align: center;
+}
+
+.tabcontent .texto {
+  margin: auto;
+  width: 720px;
+  position: relative;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: #2C3136;
 }
