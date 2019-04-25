@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Fira Sans', sans-serif;
+  position: relative;
   margin: 0;
 }
 
@@ -18,11 +19,10 @@ a {
 /* Header */
 
 header {
-  padding-top: 26px;
   height: 70px;
   position: relative;
   width: 100%;
-
+  display: flex;
 }
 
 .logotipo {
@@ -58,22 +58,34 @@ header {
 .menu {
   display: inline-block;
   margin-left: 275px;
+  align-items: center;
 }
 
 .menu li {
-  display: inline-block;
   margin-left: 50px;
   font-size: 14px;
   font-weight: 400;
 }
 
-.menu a {
+.menu .item {
   color: #2C3136;
+  height: 32px;
+}
+
+.header .datos_contacto {
+  position: absolute;
+  right: 0;
+  padding-right:  20px;
+}
+
+.header .datos_contacto li {
+  display: inline-block;
+  margin-left: 13.14px;
 }
 
 .header .contacto {
   display: inline-block;
-  margin-left: 13.14px;
+  margin-left: 5px;
   font-size: 12px;
   font-weight: 300;
 }
@@ -93,17 +105,27 @@ ul, ol {
   float: left;
 }
 
+.nav .desplegable {
+  margin: 0px;
+  /* background-color: #FFFFFF; */
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    );
+    border: 1px solid #707070;
+}
+
 .nav li a {
-	background-color: #FFFFFF;
+  color: #161616;
 	text-decoration:none;
 	padding:10px 12px;
 	display:inline-block;
-
 }
 
 .nav li a:hover {
-	background-color:#BC3224;
+	background-color: #DDD;
   color: #161616;
+  border-bottom: 3px solid #BC3224;
 }
 
 .nav li ul {
@@ -245,7 +267,7 @@ h1 {
 
 .posicion {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .col1 {
