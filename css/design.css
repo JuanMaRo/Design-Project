@@ -30,6 +30,7 @@ header {
   margin-left: 100px;
   display: inline-block;
   position: fixed;
+  z-index: 200;
 }
 
 .logotipo_fondo_carmesi {
@@ -75,7 +76,7 @@ header {
 .header .datos_contacto {
   position: absolute;
   right: 0;
-  padding-right:  20px;
+  padding-right: 20px;
 }
 
 .header .datos_contacto li {
@@ -101,8 +102,7 @@ ul, ol {
 }
 
 .nav .desplegable {
-  margin: 0px;
-  /* background-color: #FFFFFF; */
+  margin-top: 0px;
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -118,8 +118,9 @@ ul, ol {
 }
 
 .nav li a:hover {
-	background-color: #DDD;
-  color: #161616;
+	/* background-color: #DDD; */
+  /* #161616 */
+  color: #BC3224;
   border-bottom: 3px solid #BC3224;
 }
 
@@ -263,10 +264,11 @@ h1 {
 .posicion {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .col1 {
-  align-items: center;
+  padding-left: 200px;
   font-size: 14px;
   font-weight: 300;
 }
@@ -281,8 +283,13 @@ h1 {
   color: white;
   font-size: 12px;
   font-weight: 500;
+  margin: 0px;
 }
 
-.col2 p {
+.col2 .a {
   text-indent: 15px;
+}
+
+.col2 .b {
+  text-indent: 30px;
 }

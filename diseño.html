@@ -10,15 +10,15 @@
   </head>
   <body>
 
-    <figure class="logotipo"> <!--logo de la empresa que esta fijo-->
-      <div class="logotipo_fondo_blanco">
-      </div>
-      <div class="logotipo_fondo_carmesi">
-        <a href="index.html">
-          <img src="images/header/Logo DG 2019/Logo DG 2019.png" alt=""> <!--200-->
-        </a>
-      </div>
-    </figure>
+    <a href="index.html">
+      <figure class="logotipo"> <!--logo de la empresa que esta fijo-->
+        <div class="logotipo_fondo_blanco">
+        </div>
+        <div class="logotipo_fondo_carmesi">
+            <img src="images/header/Logo DG 2019/Logo DG 2019.png" alt=""> <!--200-->
+        </div>
+      </figure>
+    </a>
     <header class="header">
       <div class="navegacion">
         <ul class="nav menu"> <!--contenedor -->
@@ -41,16 +41,16 @@
           </li>
         </ul>
       </div>
-      <div class="datos_contacto" align="right">
+      <div class="datos_contacto">
         <ul>
           <li>
-            <img src="images/header/Grupo 2/Grupo 2.png" alt="correo"><p class="contacto">dp@dp-eu.com</p>
+            <img src="images/header/Grupo 2/Grupo 2.png" alt="correo" align="center"><p class="contacto">dp@dp-eu.com</p>
           </li>
           <li>
-            <img src="images/header/Grupo 6/Grupo 6.png" alt="telefono"><p class="contacto">(57 1) 601 6554</p>
+            <img src="images/header/Grupo 6/Grupo 6.png" alt="telefono" align="center"><p class="contacto">(57 1) 601 6554</p>
           </li>
           <li>
-            <img src="images/header/Grupo 7/Grupo 7.png" alt="telefono movil"><p class="contacto">(57) 316 430 7031</p>
+            <img src="images/header/Grupo 7/Grupo 7.png" alt="telefono movil" align="center"><p class="contacto">(57) 316 430 7031</p>
           </li>
         </ul>
       </div>
@@ -67,16 +67,10 @@
     <section class="contenedor"> <!--Proyectos-->
 
       <!-- Tab links -->
-      <div class="tab">
-        <div class="centrar">
-          <button class="tablinks" onclick="openTab(event, 'instalaciones')" id="defaultOpen">Instalaciones y maquinaria</button>
-        </div>
-        <div class="centrar">
-          <button class="tablinks" onclick="openTab(event, 'equipos')">Equipos</button>
-        </div>
-        <div class="centrar">
-          <button class="tablinks" onclick="openTab(event, 'partes')">Partes</button>
-        </div>
+      <div class="tab centrar">
+        <button class="tablinks" onclick="openTab(event, 'instalaciones')" id="defaultOpen">Instalaciones y maquinaria</button>
+        <button class="tablinks" onclick="openTab(event, 'equipos')">Equipos</button>
+        <button class="tablinks" onclick="openTab(event, 'partes')">Partes</button>
       </div>
 
       <!-- Tab content -->
@@ -261,23 +255,37 @@
         <div class="col2">
           <p>NOSOTROS</p>
           <p>SERVICIOS</p>
-          <p>  DISEÑO</p>
-          <p>    Metalmecánica</p>
-          <p>    Hidráulicos / Neumáticos</p>
-          <p>    Instalaciones para transporte y almacenamiento de productos</p>
-          <p>  CONSULTORIA / INTERVENTORIA / PROYECTOS</p>
-          <p>    Mécanica</p>
-          <p>    De procesos</p>
-          <p>    Instrumentación</p>
-          <p>    Eléctrica</p>
-          <p>    Control</p>
-          <p>  FABRICACIÓN / MANTENIMINETO / MONTAJES</p>
-          <p>    Equipos rotodinámicos</p>
-          <p>    Equipos estáticos</p>
-          <p>    Hidráupco / Neumático / Aire acondicionado</p>
-          <p>    Instalaciones mecánicas</p>
-          <p>    Instalaciones eléctricas</p>
-          <p>  AUTOMATIZACIÓN DE PROCESOS</p>
+          <div class="a">
+            <p>DISEÑO</p>
+            <div class="b">
+              <p>Metalmecánica</p>
+              <p>Hidráulicos / Neumáticos</p>
+              <p>Instalaciones para transporte y almacenamiento de productos</p>
+            </div>
+          </div>
+          <div class="a">
+            <p>CONSULTORIA / INTERVENTORIA / PROYECTOS</p>
+            <div class="b">
+              <p>Mécanica</p>
+              <p>De procesos</p>
+              <p>Instrumentación</p>
+              <p>Eléctrica</p>
+              <p>Control</p>
+            </div>
+          </div>
+          <div class="a">
+            <p>FABRICACIÓN / MANTENIMINETO / MONTAJES</p>
+            <div class="b">
+              <p>Equipos rotodinámicos</p>
+              <p>Equipos estáticos</p>
+              <p>Hidráupco / Neumático / Aire acondicionado</p>
+              <p>Instalaciones mecánicas</p>
+              <p>Instalaciones eléctricas</p>
+            </div>
+          </div>
+          <div class="a">
+            <p>AUTOMATIZACIÓN DE PROCESOS</p>
+          </div>
           <p>PROYECTOS</p>
           <p>CONTACTO</p>
         </div>

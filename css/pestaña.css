@@ -7,7 +7,9 @@
 }
 
 .centrar {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -18,20 +20,17 @@
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  transition: 0.3s;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
   color: #BC3224;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  font-weight: 500;
+  font-weight: bold;
   color: #BC3224;
-  background-color: #ccc;
   border-bottom: 3px solid #BC3224;
 }
 
