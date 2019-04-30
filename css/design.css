@@ -70,7 +70,7 @@ header {
 
 .menu .item {
   color: #2C3136;
-  height: 32px;
+  height: 31px;
 }
 
 .header .datos_contacto {
@@ -97,6 +97,10 @@ ul, ol {
   list-style: none;
 }
 
+.navegacion {
+  z-index: 200;
+}
+
 .nav > li {
   float: left;
 }
@@ -111,6 +115,7 @@ ul, ol {
 }
 
 .nav li a {
+  margin-top: 1.5px;
   color: #161616;
 	text-decoration:none;
 	padding:10px 12px;
@@ -118,8 +123,6 @@ ul, ol {
 }
 
 .nav li a:hover {
-	/* background-color: #DDD; */
-  /* #161616 */
   color: #BC3224;
   border-bottom: 3px solid #BC3224;
 }
