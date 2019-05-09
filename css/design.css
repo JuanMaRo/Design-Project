@@ -7,7 +7,7 @@ body {
 }
 
 .contenedor {
-  width: 955px;
+  max-width: 955px;
   margin: auto;
   position: relative;
 }
@@ -18,16 +18,13 @@ a {
 
 /* Header */
 
-header {
-  height: 70px;
-  position: relative;
-  width: 100%;
-  display: flex;
+#logotipo {
+  z-index: 200;
 }
 
 .logotipo {
   margin-top: 0px;
-  margin-left: 100px;
+  margin-left: 5%;
   display: inline-block;
   position: fixed;
   z-index: 200;
@@ -56,9 +53,18 @@ header {
   position: absolute;
 }
 
+header {
+  height: 70px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
 .menu {
   display: inline-block;
-  margin-left: 275px;
+  margin-left: 12vw;
   align-items: center;
 }
 
@@ -262,6 +268,8 @@ h1 {
   color: #FFFFFF;
   background: #2C3136;
   padding: 50px;
+  display: flex;
+  flex-wrap: flex;
 }
 
 .posicion {
@@ -271,15 +279,20 @@ h1 {
 }
 
 .col1 {
-  padding-left: 200px;
+  /* padding-left: 200px; */
   font-size: 14px;
   font-weight: 300;
+}
+
+.col1 a {
+  margin: 3px 0px;
 }
 
 .linea {
   background: #FFFFFF;
   width: 1px;
   height: 558px;
+  margin: 0px 100px;
 }
 
 .col2 {
@@ -291,8 +304,19 @@ h1 {
 
 .col2 .a {
   text-indent: 15px;
+  font-weight: 300;
+}
+
+.col2 .a p {
+  margin-top: 12px;
+  margin-bottom: 5px;
 }
 
 .col2 .b {
   text-indent: 30px;
+  font-weight: 500;
+}
+
+.col2 .b p {
+  margin: 5px;
 }
