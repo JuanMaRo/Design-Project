@@ -1,3 +1,7 @@
+.pegado {
+  position: -webkit-sticky;
+}
+
 /* Style the tab */
 .tab {
   margin-top: 50px;
@@ -9,9 +13,6 @@
   align-items: center;
   flex-wrap: flex;
   position: sticky;
-}
-
-.centrar {
 }
 
 /* Style the buttons that are used to open the tab content */
