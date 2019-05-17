@@ -3,44 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>Diseño</title>
+    <link rel="icon" type="image/png" href="images/favicon_dyp.png" />
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600" rel="stylesheet">
     <link rel="stylesheet" href="css/design.css">
     <link rel="stylesheet" href="css/pestaña.css">
-    <link rel="stylesheet" href="css/background.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+    <i class="icon-menu burger_button"></i>
 
-    <figure class="logotipo"> <!--logo de la empresa que esta fijo-->
+    <!-- Logo -->
+    <figure class="logotipo">
       <a id="logotipo" href="index.html">
         <div class="logotipo_fondo_blanco">
         </div>
         <div class="logotipo_fondo_carmesi">
-            <img src="images/header/Logo DG 2019/Logo DG 2019.png" alt=""> <!--200-->
+            <img src="images/header/Logo DG 2019/Logo DG 2019.png" alt="">
         </div>
       </a>
     </figure>
+
     <header class="header">
-      <div class="navegacion">
-        <ul class="nav menu"> <!--contenedor -->
+      <nav class="menu">
+        <ul>
           <li>
-            <a href="#" class="item">NOSOTROS</a>
+            <a class="submenu" href="#">NOSOTROS</a>
           </li>
           <li>
-            <a href="#" class="item">SERVICIOS <img src="images/header/flecha-desplegable.png" align="center" width="14px" height="14px"></a><!--icono de flechita abajo-->
-            <ul  class="desplegable">
-              <li><a href="diseño.html">Diseño</a></li>
-              <li><a href="ingenieria.html">Ingeniería</a></li>
-              <li><a href="interventoria.html">Interventoria / Consultoria</a></li>
-            </ul>
-          </li> <!--menu desplegable-->
-          <li>
-            <a href="proyectos.html" class="item">PROYECTOS</a>
+            <a class="submenu" href="#" onClick="openTab(event, 'menu')" onClick="this.parentElement.style.display='none'">SERVICIOS <i class="icon-down" style="text-indent: 5px;"></i></a>
+            <nav id="menu" class="desplegable tabcontent">
+              <ul>
+                <li><a href="diseño.html">Diseño</a></li>
+                <li><a href="ingenieria.html">Ingeniería</a></li>
+                <li><a href="interventoria.html">Interventoria / Consultoria</a></li>
+              </ul>
+            </nav>
           </li>
           <li>
-            <a href="contacto.html" class="item">CONTACTO</a>
+            <a class="submenu" href="proyectos.html">PROYECTOS</a>
+          </li>
+          <li>
+            <a class="submenu" href="contacto.html">CONTACTO</a>
           </li>
         </ul>
-      </div>
+      </nav>
       <div class="datos_contacto">
         <ul>
           <li>
@@ -64,235 +70,208 @@
       </div>
     </section>
 
-    <section class="contenedor"> <!--Proyectos-->
-
-      <!-- Tab links -->
-      <div class="tab centrar">
-        <button class="tablinks" onclick="openTab(event, 'instalaciones')" id="defaultOpen">Instalaciones y maquinaria</button>
-        <button class="tablinks" onclick="openTab(event, 'equipos')">Equipos</button>
-        <button class="tablinks" onclick="openTab(event, 'partes')">Partes</button>
-      </div>
-
-      <!-- Tab content -->
-      <div id="instalaciones" class="tabcontent">
-        <h2>Instalaciones y maquinaria</h2>
-        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="linear">
-          <hr align="left" size="1" noshade="noshade" width="20%" class="izquierda"/><p class="titulo_pestaña">Algunos de nuestros proyectos</p><hr align="right" size="1" noshade="noshade" width="20%" clasS="derecha"/>
+    <section class="proyectos">
+      <div class="contenedor">
+        <!-- Tab links -->
+        <div class="tab centrar">
+          <button class="tablinks" onclick="openTab(event, 'instalaciones')" id="defaultOpen">Instalaciones y maquinaria</button>
+          <button class="tablinks" onclick="openTab(event, 'equipos')">Equipos</button>
+          <button class="tablinks" onclick="openTab(event, 'partes')">Partes</button>
         </div>
-        <div class="proyectos"> <!--Proyectos-->
-
-          <div class="proyecto_caja">
-            <article class="">
+  
+        <!-- Tab content -->
+        <div id="instalaciones" class="tabcontent">
+          <h2>Instalaciones y maquinaria</h2>
+          <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  
+          <div class="linear">
+            <hr align="left" size="1" noshade="noshade" width="20%" class="izquierda"/><p class="titulo_pestaña">Algunos de nuestros proyectos</p><hr align="right" size="1" noshade="noshade" width="20%" clasS="derecha"/>
+          </div>
+          <div class="alinear">
+            <article class="proyecto_caja">
               <img src="images/Imagen011/Imagen011.png" width="250" height="186" alt="">
               <div class="proyecto">
-                <h4 class="proyecto_titulo">Banda transportadora</h4>
-                <p class="proyecto_subtitulo">Maquinaria - Hidráulica neumática</p>
-                <p class="proyecto_datos">Año: 2015<br>Cliente:</p>
-                <a class="ver_mas" href="#">Ver más</a>
+                <p class="proyecto_subtitulo">Diseño - Ingeniería del traslado</p>
+                <h4 class="proyecto_titulo">Planta Huntsman</h4>
+                <p class="proyecto_datos">Año: 2008<br>Cliente: HUNTSMAN</p>
+                <a class="ver_imagenes" href="#">Ver imágenes</a>
               </div>
             </article>
-          </div>
-
-          <div class="proyecto_caja">
-            <article class="">
+  
+            <article class="proyecto_caja">
               <img src="images/Imagen023/Imagen023.png" width="250" height="186" alt="">
               <div class="proyecto">
-                <h4 class="proyecto_titulo">Switch condenser</h4>
-                <p class="proyecto_subtitulo">Ingeniería de detalle - Proceso</p>
-                <p class="proyecto_datos">Año: 2015<br>Cliente:</p>
-                <a class="ver_mas" href="#">Ver más</a>
+                <p class="proyecto_subtitulo">Complejo EMAVI</p>
+                <h4 class="proyecto_titulo_especial">Consultoría: Diseños y puesta en marcha</h4>
+                <p class="proyecto_datos">Año: 2011<br>Cliente: Faconsultores EMAVI</p>
+                <a class="ver_imagenes" href="#">Ver imágenes</a>
               </div>
             </article>
-          </div>
-
-          <div class="proyecto_caja">
-            <article class="">
+  
+            <article class="proyecto_caja">
               <img src="images/DSCN3678/DSCN3678.png" width="250" height="186" alt="">
               <div class="proyecto">
-                <h4 class="proyecto_titulo">Planta Huntsman</h4>
-                <p class="proyecto_subtitulo">Ingeniería de detalle - Proceso</p>
-                <p class="proyecto_datos">Año: 2016<br>Cliente:</p>
-                <a class="ver_mas" href="#">Ver más</a>
+                <p class="proyecto_subtitulo">Planta Actual y Futura</p>
+                <h4 class="proyecto_titulo">CI Exportécnicas</h4>
+                <p class="proyecto_datos">Año: 2013<br>Cliente: CI Exportécnicas</p>
+                <a class="ver_imagenes" href="#">Ver imágenes</a>
               </div>
             </article>
-          </div>
-
-          <div class="proyecto_caja">
-            <article class="">
+  
+            <article class="proyecto_caja">
               <img src="images/Imagen011/Imagen011.png" width="250" height="186" alt="">
               <div class="proyecto">
-                <h4 class="proyecto_titulo">Banda transportadora</h4>
-                <p class="proyecto_subtitulo">Maquinaria - Hidráulica neumática</p>
-                <p class="proyecto_datos">Año: 2015<br>Cliente:</p>
-                <a class="ver_mas" href="#">Ver más</a>
+                <p class="proyecto_subtitulo">Real Energy</p>
+                <h4 class="proyecto_titulo">Refinería</h4>
+                <p class="proyecto_datos">Año: 2007<br>Cliente: CCC Ingenieros</p>
+                <a class="ver_imagenes" href="#">Ver imágenes</a>
               </div>
             </article>
           </div>
-
+  
         </div>
+  
+        <div id="equipos" class="tabcontent">
+          <h2>Equipos</h2>
+          <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros massa, ultricies pretium ultrices a, vestibulum quis lorem. Nulla et tristique ex, tincidunt gravida felis. Donec non tellus mi. Quisque quis purus rhoncus, elementum augue id, elementum velit. Integer sit amet facilisis orci, ut porttitor odio. Mauris dapibus in magna vel varius. Donec eu felis sollicitudin, laoreet massa nec, vehicula ipsum. Curabitur sit amet molestie neque.<br/><br/>Nullam ut commodo augue. Nunc consectetur auctor odio, at rhoncus velit hendrerit in. Vestibulum hendrerit lacinia rutrum. Nullam eu euismod lorem. Suspendisse semper sit amet turpis sed laoreet. Pellentesque rutrum lobortis imperdiet. Nulla facilisi. Curabitur purus nunc, malesuada nec nisl non, vehicula porta ex.</p>
+  
+          <div class="linear">
+            <hr align="left" size="1" noshade="noshade" width="20%" class="izquierda"/><p class="titulo_pestaña">Algunos de nuestros proyectos</p><hr align="right" size="1" noshade="noshade" width="20%" clasS="derecha"/>
+          </div>
+  
+          <article class="proyecto_caja">
+            <img src="images/Imagen011/Imagen011.png" width="250" height="186" alt="">
+            <div class="proyecto">
+              <p class="proyecto_subtitulo">Planos de fabricación Ecopetrol</p>
+              <h4 class="proyecto_titulo">Tanque 50.000 Barriles</h4>
+              <p class="proyecto_datos">Año: 2007<br>Cliente: Sudeim</p>
+              <a class="ver_imagenes" href="#">Ver imágenes</a>
+            </div>
+          </article>
 
-      </div>
+          <article class="proyecto_caja">
+            <img src="images/Imagen023/Imagen023.png" width="250" height="186" alt="">
+            <div class="proyecto">
+              <p class="proyecto_subtitulo">Limpiarrejas Codensa</p>
+              <h4 class="proyecto_titulo">Limpia rejas</h4>
+              <p class="proyecto_datos">Año: 2012<br>Cliente: Lear y asociados</p>
+              <a class="ver_imagenes" href="#">Ver imágenes</a>
+            </div>
+          </article>
 
-      <div id="equipos" class="tabcontent">
-        <h2>Equipos</h2>
-        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros massa, ultricies pretium ultrices a, vestibulum quis lorem. Nulla et tristique ex, tincidunt gravida felis. Donec non tellus mi. Quisque quis purus rhoncus, elementum augue id, elementum velit. Integer sit amet facilisis orci, ut porttitor odio. Mauris dapibus in magna vel varius. Donec eu felis sollicitudin, laoreet massa nec, vehicula ipsum. Curabitur sit amet molestie neque.<br/><br/>Nullam ut commodo augue. Nunc consectetur auctor odio, at rhoncus velit hendrerit in. Vestibulum hendrerit lacinia rutrum. Nullam eu euismod lorem. Suspendisse semper sit amet turpis sed laoreet. Pellentesque rutrum lobortis imperdiet. Nulla facilisi. Curabitur purus nunc, malesuada nec nisl non, vehicula porta ex.</p>
+          <article class="proyecto_caja">
+            <img src="images/DSCN3678/DSCN3678.png" width="250" height="186" alt="">
+            <div class="proyecto">
+              <p class="proyecto_subtitulo">Intercambiador aceite térmico agua</p>
+              <h4 class="proyecto_titulo">Intercambiador Carboquímica</h4>
+              <p class="proyecto_datos">Año: 2007<br>Cliente: Sudeim</p>
+              <a class="ver_imagenes" href="#">Ver imágenes</a>
+            </div>
+          </article>
 
-        <div class="linear">
-          <hr align="left" size="1" noshade="noshade" width="20%" class="izquierda"/><p class="titulo_pestaña">Algunos de nuestros proyectos</p><hr align="right" size="1" noshade="noshade" width="20%" clasS="derecha"/>
+          <article class="proyecto_caja">
+            <img src="images/Imagen011/Imagen011.png" width="250" height="186" alt="">
+            <div class="proyecto">
+              <p class="proyecto_subtitulo">Volco Bison trucks</p>
+              <h4 class="proyecto_titulo">Volco doble troque</h4>
+              <p class="proyecto_datos">Año: 2006<br>Cliente: Bison trucks</p>
+              <a class="ver_imagenes" href="#">Ver imágenes</a>
+            </div>
+          </article>
+
+          <article class="proyecto_caja">
+            <img src="images/Imagen023/Imagen023.png" width="250" height="186" alt="">
+            <div class="proyecto">
+              <p class="proyecto_subtitulo">Escamador</p>
+              <h4 class="proyecto_titulo">Escamador Carboquimica</h4>
+              <p class="proyecto_datos">Año: 2006<br>Cliente: Sudeim</p>
+              <a class="ver_imagenes" href="#">Ver imágenes</a>
+            </div>
+          </article>
+  
         </div>
-        <div class="proyectos"> <!--Proyectos-->
-
-          <div class="proyecto_caja">
-            <article class="">
-              <img src="images/Imagen011/Imagen011.png" width="250" height="186" alt="">
-              <div class="proyecto">
-                <h4 class="proyecto_titulo">Banda transportadora</h4>
-                <p class="proyecto_subtitulo">Maquinaria - Hidráulica neumática</p>
-                <p class="proyecto_datos">Año: 2015<br>Cliente:</p>
-                <a class="ver_mas" href="#">Ver más</a>
-              </div>
-            </article>
+  
+        <div id="partes" class="tabcontent">
+          <h2>Partes</h2>
+          <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  
+          <!-- <div class="linear">
+            <hr align="left" size="1" noshade="noshade" width="20%" class="izquierda"/><p class="titulo_pestaña">Algunos de nuestros proyectos</p><hr align="right" size="1" noshade="noshade" width="20%" clasS="derecha"/>
           </div>
 
-          <div class="proyecto_caja">
-            <article class="">
-              <img src="images/Imagen023/Imagen023.png" width="250" height="186" alt="">
-              <div class="proyecto">
-                <h4 class="proyecto_titulo">Switch condenser</h4>
-                <p class="proyecto_subtitulo">Ingeniería de detalle - Proceso</p>
-                <p class="proyecto_datos">Año: 2015<br>Cliente:</p>
-                <a class="ver_mas" href="#">Ver más</a>
-              </div>
-            </article>
-          </div>
-
-          <div class="proyecto_caja">
-            <article class="">
-              <img src="images/DSCN3678/DSCN3678.png" width="250" height="186" alt="">
-              <div class="proyecto">
-                <h4 class="proyecto_titulo">Planta Huntsman</h4>
-                <p class="proyecto_subtitulo">Ingeniería de detalle - Proceso</p>
-                <p class="proyecto_datos">Año: 2016<br>Cliente:</p>
-                <a class="ver_mas" href="#">Ver más</a>
-              </div>
-            </article>
-          </div>
-
-          <div class="proyecto_caja">
-            <article class="">
-              <img src="images/Imagen011/Imagen011.png" width="250" height="186" alt="">
-              <div class="proyecto">
-                <h4 class="proyecto_titulo">Banda transportadora</h4>
-                <p class="proyecto_subtitulo">Maquinaria - Hidráulica neumática</p>
-                <p class="proyecto_datos">Año: 2015<br>Cliente:</p>
-                <a class="ver_mas" href="#">Ver más</a>
-              </div>
-            </article>
-          </div>
-
-          <div class="proyecto_caja">
-            <article class="">
-              <img src="images/Imagen023/Imagen023.png" width="250" height="186" alt="">
-              <div class="proyecto">
-                <h4 class="proyecto_titulo">Switch condenser</h4>
-                <p class="proyecto_subtitulo">Ingeniería de detalle - Proceso</p>
-                <p class="proyecto_datos">Año: 2015<br>Cliente:</p>
-                <a class="ver_mas" href="#">Ver más</a>
-              </div>
-            </article>
-          </div>
-
+          <article class="proyecto_caja">
+            <img src="images/Imagen011/Imagen011.png" width="250" height="186" alt="">
+            <div class="proyecto">
+              <p class="proyecto_subtitulo">Maquinaria - Hidráulica neumática</p>
+              <h4 class="proyecto_titulo">Banda transportadora</h4>
+              <p class="proyecto_datos">Año: 2015<br>Cliente:</p>
+              <a class="ver_imagenes" href="#">Ver imágenes</a>
+            </div>
+          </article> -->
+  
         </div>
-
-      </div>
-
-      <div id="partes" class="tabcontent">
-        <h2>Partes</h2>
-        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="linear">
-          <hr align="left" size="1" noshade="noshade" width="20%" class="izquierda"/><p class="titulo_pestaña">Algunos de nuestros proyectos</p><hr align="right" size="1" noshade="noshade" width="20%" clasS="derecha"/>
-        </div>
-        <div class="proyectos"> <!--Proyectos-->
-
-          <div class="proyecto_caja">
-            <article class="">
-              <img src="images/Imagen011/Imagen011.png" width="250" height="186" alt="">
-              <div class="proyecto">
-                <h4 class="proyecto_titulo">Banda transportadora</h4>
-                <p class="proyecto_subtitulo">Maquinaria - Hidráulica neumática</p>
-                <p class="proyecto_datos">Año: 2015<br>Cliente:</p>
-                <a class="ver_mas" href="#">Ver más</a>
-              </div>
-            </article>
+  
+        <div class="desarrollo_contacto">
+          <p>Diseñamos y desarrollamos su proyecto de ingenieria, justo como usted lo necesita.</p>
+          <div class="boton" align="center">
+            <a href="contacto.html" class="enlace">CONTÁCTENOS AHORA</a>
           </div>
-
-        </div>
-
-      </div>
-
-      <div class="desarrollo_contacto">
-        <p>Diseñamos y desarrollamos su proyecto de ingenieria, justo com usted lo necesita.</p>
-        <div class="boton" align="center">
-          <a href="contacto.html" class="enlace">CONTÁCTENOS AHORA</a>
         </div>
       </div>
     </section>
 
     <footer class="footer">
-        <div class="contenedor posicion">
-  
-          <div class="col1">
-            <img src="images/header/Logo DG 2019/Logo DG 2019.png" alt=""> <!--logo-->
-            <p class="a">Carrera 53 #104 B-35 of 501</p>
-            <p class="a">Bogotá, Colombia</p>
-            <p class="a">(+57 1) 601 6554</p>
-            <p class="a">(+57) 316 430 7031</p>
-            <p class="a">dp@dp-eu.com</p>
-            <br>
-            <p>© 2019 Design & Project E.U.</p>
-          </div>
-  
-          <div class="linea"></div>
-  
-          <div class="col2">
-            <p>NOSOTROS</p>
-            <p>SERVICIOS</p>
-            <div class="a">
-              <p>DISEÑO</p>
-              <div class="b">
-                <p>Instalaciones y maquinaria</p>
-                <p>Equipos</p>
-                <p>Partes</p>
-              </div>
-            </div>
-            <div class="a">
-              <p>INGENIERÍA</p>
-              <div class="b">
-                <p>Proceso</p>
-                <p>Civil</p>
-                <p>Mecánica</p>
-                <p>Eléctrica</p>
-                <p>Instrumentaci+on y control</p>
-              </div>
-            </div>
-            <div class="a">
-              <p>INTERVENTORÍA / CONSULTARÍA</p>
-              <div class="b">
-                <p>Interventoría</p>
-                <p>Consultoría</p>
-              </div>
-            </div>
-            <div class="a">
-              <p>AUTOMATIZACIÓN DE PROCESOS</p>
-            </div>
-            <p>PROYECTOS</p>
-            <p>CONTACTO</p>
-          </div>
-  
+      <div class="contenedor">
+
+        <div class="col1">
+          <img src="images/header/Logo DG 2019/Logo DG 2019.png" />
+          <p class="a">Carrera 53 #104 B-35 of 501</p>
+          <p class="a">Bogotá, Colombia</p>
+          <p class="a">(+57 1) 601 6554</p>
+          <p class="a">(+57) 316 430 7031</p>
+          <p class="a">dp@dp-eu.com</p>
+          <br>
+          <p>© 2019 Design & Project E.U.</p>
         </div>
+
+        <div class="linea"></div>
+
+        <div class="col2">
+          <p>NOSOTROS</p>
+          <p>SERVICIOS</p>
+          <div class="a">
+            <p>DISEÑO</p>
+            <div class="b">
+              <p>Instalaciones y maquinaria</p>
+              <p>Equipos</p>
+              <p>Partes</p>
+            </div>
+          </div>
+          <div class="a">
+            <p>INGENIERÍA</p>
+            <div class="b">
+              <p>Proceso</p>
+              <p>Civil</p>
+              <p>Mecánica</p>
+              <p>Eléctrica</p>
+              <p>Instrumentación y control</p>
+            </div>
+          </div>
+          <div class="a">
+            <p>INTERVENTORÍA / CONSULTARÍA</p>
+            <div class="b">
+              <p>Interventoría</p>
+              <p>Consultoría</p>
+            </div>
+          </div>
+          <div class="a">
+            <p>AUTOMATIZACIÓN DE PROCESOS</p>
+          </div>
+          <p>PROYECTOS</p>
+          <p>CONTACTO</p>
+        </div>
+
+      </div>
     </footer>
     <script type="text/javascript" src="javascript/pestañas.js"></script>
   </body>
