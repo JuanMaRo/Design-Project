@@ -60,7 +60,9 @@ a {
 .logotipo {
   margin-top: 0px;
   margin-left: 3%;
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  align-self: flex-start;
   position: fixed;
   z-index: 200;
 }
@@ -91,7 +93,6 @@ a {
 .header {
   display: flex;
   height: 70px;
-  /* position: relative; */
   width: 100%;
   z-index: 1;
   align-items: center;
@@ -132,11 +133,6 @@ a {
   font-weight: 400;
 }
 
-/* .menu ul li:hover {
-  box-sizing: border-box;
-  border-bottom: 3px solid #BC3224;
-} */
-
 .menu ul li .submenu:hover {
   box-sizing: border-box;
   color: #BC3224;
@@ -148,13 +144,18 @@ a {
   padding-right: 20px;
 }
 
+.datos_contacto ul {
+  display: inherit;
+}
+
 .datos_contacto li {
-  display: inline-block;
+  display: inherit;
   margin-left: 1vw;
+  align-items: center;
 }
 
 .header .contacto {
-  display: inline-block;
+  display: inherit;
   margin-left: 5px;
   font-size: 12px;
   font-weight: 300;
@@ -162,26 +163,14 @@ a {
 
 /* Menu desplegable */
 
-.navegacion {
-  z-index: 5; /* Este no importa*/
-}
-
-.nav > li {
-  float: left;
-}
-
 .desplegable {
+  display: none;
   margin-top: 0px;
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     );
     border: 1px solid #707070;
-  z-index: 1;
-}
-
-.desplegable ul {
-  flex-direction: column;
 }
 
 .desplegable ul li a {
@@ -196,19 +185,21 @@ a {
 }
 
 .desplegable {
-	display: block;
 	position:absolute;
 	min-width:140px;
   margin: 0px;
   padding: 0px;
 }
 
-/* .salir_menu:hover > .desplegable {
-	background-color: aqua;
-} */
+.menu li:hover > .desplegable {
+  display: block;
+}
 
 .desplegable ul {
-	position:relative;
+  position:relative;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
 }
 
 /* Portada */
@@ -472,10 +463,11 @@ h1 {
   display: none;
   line-height: 40px;
   text-align: center;
-  position: fixed;
+  /* position: fixed; Sí comento esta parte, el header se crea, pero los elementos aun no estan uno al lado del otro ademas todo tiene display flex, sí se trabaja con display block, hay que buscar como acomodar los elementos*/
   z-index: 6;
   left: 5px;
   top: 5px;
+  color: white;
 }
 
 /* Media Queries */
@@ -488,15 +480,17 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .logotipo {
-    display: none;
+    /* display: none; */
   }
   .datos_contacto {
     display: none;
   }
   .header {
-    display: block;
+    /* display: block; */
+    display: flex;
     height: auto;
     /* justify-content: center; */
+    justify-content: space-between;
   }
   .header ul {
     display: block;
@@ -508,10 +502,12 @@ h1 {
     justify-content: center;
   }
   .menu {
+    display: none;
     padding: 0px;
   }
   .burger_button {
-    display: block;
+    /* display: block; */
+    display: flex;
   }
   hr {
     display: none;
