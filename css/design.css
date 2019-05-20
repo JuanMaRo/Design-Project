@@ -101,7 +101,7 @@ a {
 }
 
 .menu {
-  padding-left: 17%;
+  padding-left: 25%;
   height: inherit;
   display: flex;
 }
@@ -117,7 +117,7 @@ a {
 
 .menu ul li {
   height: inherit;
-  margin: 0px 2%;
+  margin: 0px 5%;
 }
 
 .menu li a {
@@ -478,12 +478,21 @@ h1 {
   }
 }
 
+@media screen and (max-width: 891px) {
+  .datos_contacto {
+    display: none;
+  }
+  .header {
+    justify-content: flex-end;
+  }
+  .menu {
+    margin-right: 7%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .logotipo {
     /* display: none; */
-  }
-  .datos_contacto {
-    display: none;
   }
   .header {
     /* display: block; */
