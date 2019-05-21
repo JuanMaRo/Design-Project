@@ -33,11 +33,40 @@
   content: "\e900";
 }
 
+/* Header_responsive */
+.responsive{
+  display: none;
+  padding: 5px;
+  border-bottom: 1px solid black;
+  background: #E9E9E9;
+}
+
+.logo_responsive {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  background-image: url('../images/header/Logo\ DP.svg');
+}
+
+.burger_button {
+  width: 40px;
+  height: 40px;
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  z-index: 6;
+  left: 5px;
+  top: 5px;
+  color: black;
+  /* float: right; */
+}
+
+
 /* General */
 
 body {
   font-family: 'Fira Sans', sans-serif;
-  /* position: relative; */
   margin: 0;
 }
 
@@ -186,7 +215,7 @@ a {
 
 .desplegable {
 	position:absolute;
-	min-width:140px;
+	/* min-width:140px; */
   margin: 0px;
   padding: 0px;
 }
@@ -455,21 +484,6 @@ h1 {
   margin: 5px;
 }
 
-.burger_button {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #BC3224;
-  display: none;
-  line-height: 40px;
-  text-align: center;
-  /* position: fixed; Sí comento esta parte, el header se crea, pero los elementos aun no estan uno al lado del otro ademas todo tiene display flex, sí se trabaja con display block, hay que buscar como acomodar los elementos*/
-  z-index: 6;
-  left: 5px;
-  top: 5px;
-  color: white;
-}
-
 /* Media Queries */
 
 @media screen and (max-width: 1024px) {
@@ -491,14 +505,30 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    position: relative;
+  }
+  .responsive{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 2;
+  }
+  .logo_responsive {
+    display: block;
+  }
+  .burger_button {
+    display: block;
+  }
   .logotipo {
-    /* display: none; */
+    display: none;
   }
   .header {
     /* display: block; */
+    position: absolute;
     display: flex;
     height: auto;
-    /* justify-content: center; */
+    justify-content: center;
     justify-content: space-between;
   }
   .header ul {
@@ -511,12 +541,27 @@ h1 {
     justify-content: center;
   }
   .menu {
-    display: none;
-    padding: 0px;
-  }
-  .burger_button {
-    /* display: block; */
     display: flex;
+    /* display: flex; */
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 50px;
+    left: -100vw;
+    transition: .3s;
+  }
+  .menu.is_active {
+    left: 0;
+  }
+  .menu ul li {
+    border-bottom: .5px solid black;
+  }
+  .menu ul, .menu ul li, .menu ul li a {
+    width: 100%;
+    margin: 0px;
   }
   hr {
     display: none;

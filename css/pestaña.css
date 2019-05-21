@@ -63,7 +63,7 @@
 }
 
 .parrafo {
-  margin: 60px 117.500px 60px 117.500px;
+  margin: 60px 117.500px;
   max-width: 720px;
   position: relative;
   font-size: 14px;
@@ -161,6 +161,9 @@
   }
   .tabcontent .derecha {
     display: none;
+  }
+  .parrafo {
+    margin: 60px 8%;
   }
 }
 
