@@ -309,12 +309,22 @@ a {
 
 .presentacion {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
   font-weight: 600;
   font-size: 50px;
   color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
+.texto_background {
+  color: white;
+  max-width: 400px;
 }
 
 .contacto_caja {
@@ -355,6 +365,11 @@ h1 {
   color: #2C3136;
 }
 
+.proyecto_caja_home {
+  display: inline-block;
+  margin: 16px;
+}
+
 .proyecto_caja {
   width: 260px;
   height: 349.5px;
@@ -364,6 +379,8 @@ h1 {
   background: #E9E9E9;
   text-align: center;
 }
+
+/* Sí los titulos son como me mostro Camilo, es necesario quitar '.proyecto_titulo_especial' por '.proyecto_titulo' y hacer los respectivos cambios*/
 
 .proyecto_titulo {
   display: flex;
@@ -494,7 +511,7 @@ h1 {
 
 @media screen and (max-width: 790px) {
   .datos_contacto {
-    padding-right: .5vw;
+    /* padding-right: .5vw; */
   }
 }
 
@@ -546,7 +563,7 @@ h1 {
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
-    top: -101px;
+    top: -151px;
     /* left: -100vw; */
     transition: .3s;
   }

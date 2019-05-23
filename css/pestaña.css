@@ -44,7 +44,7 @@
 }
 
 .tabcontent h2 {
-  font-size: 36px;
+  font-size: 33px;
   font-weight: 400;
   color: #2C3136;
   text-align: center;
@@ -53,13 +53,12 @@
 .texto {
   margin: auto;
   margin-bottom: 60px;
-  max-width: 720px;
+  max-width: 450px;
   position: relative;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #2C3136;
   display: flex;
-  flex-wrap: flex;
 }
 
 .parrafo {
@@ -71,6 +70,7 @@
   color: #2C3136;
   display: flex;
   flex-wrap: wrap;
+  text-align: start;
 }
 
 .linear {
@@ -81,9 +81,9 @@
 }
 
 .tabcontent .izquierda {
-  align: left;
-  size: 1px;;
-  width: 22%;
+  /* align: left; */
+  size: 1px;
+  width: 31%;
   display: inline-block;
   /* display: inherit; */
 }
@@ -102,9 +102,9 @@
 }
 
 .tabcontent .derecha {
-  align: right;
+  /* align: right; */
   size: 1px;
-  width: 22%;
+  width: 31%;
   display: inline-block;
   /* display: inherit; */
 }
