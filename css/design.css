@@ -130,7 +130,7 @@ a {
 }
 
 .menu {
-  padding-left: 25%;
+  padding-left: 24%;
   height: inherit;
   display: flex;
 }
@@ -196,8 +196,8 @@ a {
   display: none;
   margin-top: 0px;
   background: linear-gradient(
-      rgba(255, 255, 255, 1.0),
-      rgba(255, 255, 255, 1.0)
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
     );
     border: 1px solid #707070;
 }
@@ -229,6 +229,7 @@ a {
   justify-content: center;
   flex-direction: column;
   z-index: 1;
+  padding-right: 15px;
 }
 
 /* Portada */
@@ -379,7 +380,7 @@ h1 {
 
 .parrafo_home {
   margin: 60px auto;
-  padding: 20px;
+  padding: 0px 10px;
   max-width: 720px;
   position: relative;
   font-size: 14px;
@@ -503,6 +504,10 @@ h1 {
   font-weight: 300;
 }
 
+.col1 img {
+  margin-bottom: 40px;
+}
+
 .col1 .a {
   margin: 3px 0px;
 }
@@ -521,9 +526,13 @@ h1 {
   margin: 0px;
 }
 
+.col2 p a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 .col2 .a {
   text-indent: 15px;
-  font-weight: 300;
 }
 
 .col2 .a p {
@@ -533,11 +542,11 @@ h1 {
 
 .col2 .b {
   text-indent: 30px;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .col2 .b p {
-  margin: 5px;
+  margin: 5px 0px;
 }
 
 /* Media Queries */
