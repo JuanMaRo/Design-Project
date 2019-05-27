@@ -196,8 +196,8 @@ a {
   display: none;
   margin-top: 0px;
   background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
+      rgba(255, 255, 255, 1.0),
+      rgba(255, 255, 255, 1.0)
     );
     border: 1px solid #707070;
 }
@@ -307,6 +307,21 @@ a {
   flex-wrap: wrap;
 }
 
+.background_contacto {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../images/contacto/contacto.png');
+  background-size: cover;
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .presentacion {
   text-align: center;
   display: flex;
@@ -319,10 +334,16 @@ h1 {
   font-weight: 600;
   font-size: 50px;
   color: #FFFFFF;
+}
+
+.titulo_portada {
+  font-weight: 600;
+  font-size: 50px;
+  color: #FFFFFF;
   margin-bottom: 0px;
 }
 
-.texto_background {
+.texto_portada {
   color: white;
   max-width: 400px;
 }
@@ -356,6 +377,19 @@ h1 {
   text-align: center;
 }
 
+.parrafo_home {
+  margin: 60px auto;
+  padding: 20px;
+  max-width: 720px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2C3136;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+}
+
 .titulo {
   margin-top: 60px;
   margin-bottom: 22.5px;
@@ -365,9 +399,26 @@ h1 {
   color: #2C3136;
 }
 
-.proyecto_caja_home {
+.contactos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.caja_alternativa {
   display: inline-block;
   margin: 16px;
+}
+
+.caja_contacto {
+  display: inline-block;
+  margin: 16px 50px;
+}
+
+.contactos_textos {
+  display: flex;
+  justify-content: baseline;
 }
 
 .proyecto_caja {
@@ -380,8 +431,6 @@ h1 {
   text-align: center;
 }
 
-/* Sí los titulos son como me mostro Camilo, es necesario quitar '.proyecto_titulo_especial' por '.proyecto_titulo' y hacer los respectivos cambios*/
-
 .proyecto_titulo {
   display: flex;
   flex-wrap: flex;
@@ -389,15 +438,6 @@ h1 {
   font-size: 16px;
   font-weight: 500;
   margin: 0px 0px 3em 0px;
-}
-
-.proyecto_titulo_especial {
-  display: flex;
-  flex-wrap: flex;
-  justify-content: center;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0px 0px 2em 0px;
 }
 
 .proyecto_subtitulo {
@@ -427,15 +467,13 @@ h1 {
   width: 352px;
   height: 40px;
   border-radius: 5px;
-  /* border: none; */
-  /* padding: 20px 68px 10px; */
   background: #BC3224;
   cursor: pointer;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
 }
 
 .ver_proyectos {
@@ -447,6 +485,7 @@ h1 {
 /* Footer */
 
 .footer {
+  margin-top: 120px;
   color: #FFFFFF;
   background: #2C3136;
   padding: 50px;
@@ -509,12 +548,6 @@ h1 {
   }
 }
 
-@media screen and (max-width: 790px) {
-  .datos_contacto {
-    /* padding-right: .5vw; */
-  }
-}
-
 @media screen and (max-width: 768px) {
   .datos_contacto {
     display: none;
@@ -556,27 +589,27 @@ h1 {
   }
   .menu {
     display: flex;
-    /* display: flex; */
     padding: 0px;
     margin: 0px;
     width: 100%;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 1.0);
     position: absolute;
     top: -151px;
-    /* left: -100vw; */
     transition: .3s;
   }
   .menu.is_active {
     top: 50px;
-    /* left: 0; */
   }
   .menu ul li {
     border-bottom: .5px solid black;
   }
   .menu ul, .menu ul li, .menu ul li a {
-    width: 100%;
+    width: 100vw; /* 100% */
     margin: 0px;
+  }
+  .desplegable ul li a {
+    padding: 0px;
   }
   hr {
     display: none;
@@ -589,6 +622,13 @@ h1 {
   }
   h1 {
     font-size: 40px;
+  }
+  .titulo_portada {
+    margin-top: 60px;
+    font-size: 30px;
+  }
+  .texto_portada {
+    font-size: 13px;  
   }
   .titulo {
     font-size: 24px;
