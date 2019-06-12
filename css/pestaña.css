@@ -165,9 +165,6 @@
   .tabcontent .derecha {
     display: none;
   }
-  /* .parrafo {
-    margin: 60px 8%;
-  } */
 }
 
 @media screen and (max-width: 480px) {

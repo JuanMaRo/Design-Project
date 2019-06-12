@@ -39,9 +39,9 @@
               </ul>
             </nav>
           </li>
-          <!-- <li>
+          <li>
             <a class="submenu" href="galeria.html">GALERÍA</a>
-          </li> -->
+          </li>
           <li>
             <a class="submenu" href="contacto.html">CONTACTO</a>
           </li>
@@ -92,6 +92,30 @@
             <img src="images/contacto/correo2.png" alt="">
             <p class="contactos_textos">dp@dp-eu.com</p>
           </article>
+        </div>
+
+        <div class="formulario_caja">
+          <form action="mailer.php" method="post" class="form-consulta">
+            <div data-for="name">
+              <label> <p>Nombre</p>
+                <input type="text" name="name" data-form-field="name" class="campo-form" required>
+              </label>
+            </div>
+            
+            <div data-for="email">
+              <label> <p>Correo electrónico</p>
+                <input type="email" name="email" data-form-field="email" class="campo-form" required>
+              </label>
+            </div>
+            
+            <div data-for="message">
+              <label> <p>Mensaje</p>
+                <textarea name="message" data-form-field="message" class="campo-form"></textarea>
+              </label>
+            </div>
+        
+            <input type="submit" value="Enviar" class="btn-form">
+          </form>
         </div>
 
       </div>
