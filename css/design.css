@@ -727,6 +727,9 @@ textarea {
   .burger_button {
     display: block;
   }
+  .logotipo {
+    position: absolute;
+  }
   .logotipo_fondo_carmesi {
     width: 100px;
     height: 110px;
@@ -781,6 +784,10 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
+  .logotipo_fondo_carmesi {
+    width: 76px;
+    height: 80px;
+  }
   .background {
     height: 300px;
   }
@@ -816,8 +823,8 @@ textarea {
   .titulo {
     font-size: 20px;
   }
-  .logotipo_fondo_carmesi {
+  /* .logotipo_fondo_carmesi {
     width: 80px;
     height: 84px;
-  }
+  } */
 }
