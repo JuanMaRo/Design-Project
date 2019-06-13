@@ -480,9 +480,10 @@ h1 {
 }
 
 .imagen img {
-  width: 500px;
-  height: 100%;
+  /* width: 500px; */
+  /* height: 100%; */
   max-width: 100%;
+  max-height: 90vh;
   box-sizing: border-box;
 }
 
