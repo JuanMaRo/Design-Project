@@ -10,3 +10,16 @@ function hideShow() {
         menu.classList.add('is_active');
     }
 }
+
+const desplegable = document.querySelector('.desplegable');
+const spreadButton = document.querySelector('#spread');
+
+spreadButton.addEventListener('click', spreadHide);
+
+function spreadHide() {
+    if (desplegable.classList.contains('active')) {
+        desplegable.classList.remove('active');
+    } else {
+        desplegable.classList.add('active');
+    }
+}

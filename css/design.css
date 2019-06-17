@@ -41,6 +41,10 @@
   content: "\e901";
 }
 
+br {
+  margin: 5px;
+}
+
 /* Header_responsive */
 .responsive{
   display: none;
@@ -703,8 +707,16 @@ textarea {
     width: 100vw; /* 100% */
     margin: 0px;
   }
+  .desplegable {
+    top: -155px;
+    transition: .2s;
+  }
+  .desplegable.active {
+    top: 50px;
+  }
   .desplegable ul li a {
     padding: 0px;
+    border-right: none;
   }
   hr {
     display: none;
