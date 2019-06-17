@@ -143,6 +143,8 @@
 }
 
 .desarrollo_contacto .boton { /*hijo*/
+  display: flex;
+  align-items: center;
   max-width: 150px;
   height: 24px;
   background: #BC3224;

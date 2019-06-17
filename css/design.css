@@ -29,6 +29,7 @@
 }
 .icon-menu:before {
   content: "\e902";
+  font-size: 34px;
 }
 .icon-down:before {
   content: "\e903";
@@ -66,7 +67,6 @@
   left: 5px;
   top: 5px;
   color: black;
-  /* float: right; */
 }
 
 
@@ -96,7 +96,6 @@ a {
 .logotipo {
   margin-top: 0px;
   margin-left: 3%;
-  /* display: inline-block; */
   display: flex;
   align-self: flex-start;
   position: fixed;
@@ -167,7 +166,7 @@ a {
   align-items: center;
 }
 
-.menu li a { /* las propiedades del texto */
+.menu li a {
   text-decoration: none;
   color: #2C3136;
   font-size: 14px;
@@ -227,7 +226,6 @@ a {
 
 .desplegable {
 	position:absolute;
-	/* min-width:140px; */
   margin: 0px;
   padding: 0px;
 }
@@ -241,7 +239,7 @@ a {
   justify-content: center;
   flex-direction: column;
   z-index: 1;
-  padding-right: 15px;
+  padding-right: 20px;
 }
 
 /* Portada */
@@ -251,7 +249,7 @@ a {
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
-    url('../images/Backgrounds/IMG_0376@2x.png');
+    url('../images/IMG_0376@2x.png');
   background-size: cover;
   padding: 20px;
   height: 600px;
@@ -260,72 +258,12 @@ a {
   justify-content: center;
 }
 
-.background_diseño {
+.background_banner {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
-    url('../images/Backgrounds/S5000719@2x.png');
-  background-size: cover;
-  padding: 20px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.background_ingenieria {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url('../images/Backgrounds/Imagen016@2x.png');
-  background-size: cover;
-  padding: 20px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.background_interventoria {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url('../images/Backgrounds/Imagen_001@2x.png');
-  background-size: cover;
-  padding: 20px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.background_proyectos {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url('../images/Backgrounds/S5000719@2x.png');
-  background-size: cover;
-  padding: 20px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.background_contacto {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url('../images/contacto/contacto.png');
+    url('../images/banner_servicios.jpg');
   background-size: cover;
   padding: 20px;
   height: 200px;
@@ -425,15 +363,10 @@ h1 {
 }
 
 .modal {
-  /* visibility: hidden;
-  opacity: 0; */
   display: none;
 }
 
 .modal:target {
-  /* visibility: visible;
-  opacity: 1;
-  transition: all 0.5s; */
   display:block;
   position: fixed;
   background: rgba(0, 0, 0, 0.8);
@@ -462,8 +395,6 @@ h1 {
 
 .imagen {
   margin-top: 50px;
-  /* width: 90vw;
-  height: 35vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -494,10 +425,8 @@ h1 {
   position: fixed;
   display: flex;
   align-self: flex-start;
-  /* background: #FFFFFF; */
   width: 25px;
   height: 25px;
-  /* margin: 10px auto; */
   text-align: right;
   text-decoration: none;
   font-size: 25px;
@@ -570,17 +499,12 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-bottom: 120px; */
 }
 
 .ver_proyectos {
   color: white;
   font-size: 14px;
   font-weight: 400;
-}
-
-.formulario_caja {
-  /* text-align: center; */
 }
 
 .form-consulta {
@@ -725,12 +649,14 @@ textarea {
   }
   .logo_responsive {
     display: block;
+    margin-left: 3%;
   }
   .burger_button {
     display: block;
   }
   .logotipo {
     position: absolute;
+    margin-left: 3%;
   }
   .logotipo_fondo_carmesi {
     width: 100px;
@@ -825,8 +751,4 @@ textarea {
   .titulo {
     font-size: 20px;
   }
-  /* .logotipo_fondo_carmesi {
-    width: 80px;
-    height: 84px;
-  } */
 }
