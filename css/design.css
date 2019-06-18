@@ -463,11 +463,10 @@ h1 {
 
 .proyecto_titulo {
   display: flex;
-  flex-wrap: flex;
   justify-content: center;
   font-size: 16px;
   font-weight: 500;
-  margin: 0px 0px 3em 0px;
+  margin: 0px 0px 2.5em 0px;
 }
 
 .proyecto_subtitulo {
@@ -482,7 +481,7 @@ h1 {
 }
 
 .ver_imagenes {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   color: #BC3224;
 }
