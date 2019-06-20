@@ -205,6 +205,12 @@ a {
   font-weight: 300;
 }
 
+.contacto_externo {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
 /* Menu desplegable */
 
 .desplegable {
@@ -447,6 +453,7 @@ h1 {
 }
 
 .contactos_textos {
+  color: #000;
   display: flex;
   justify-content: baseline;
 }
@@ -484,30 +491,6 @@ h1 {
   font-size: 14px;
   font-weight: 400;
   color: #BC3224;
-}
-
-.contenedor_caja {
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.ver_proyectos_caja {
-  width: 352px;
-  height: 40px;
-  border-radius: 5px;
-  background: #BC3224;
-  cursor: pointer;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ver_proyectos {
-  color: white;
-  font-size: 14px;
-  font-weight: 400;
 }
 
 .form-consulta {
@@ -621,6 +604,10 @@ textarea {
 
 .col2 .b p {
   margin: 5px 0px;
+}
+
+.contacto_externo_footer{
+  color: #FFFFFF;
 }
 
 /* Media Queries */
